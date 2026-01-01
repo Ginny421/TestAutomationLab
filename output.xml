@@ -1,161 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.2 on darwin)" generated="2026-01-01T13:42:44.897198" rpa="false" schemaversion="5">
-<suite id="s1" name="Valid Login With Out Fname Lname" source="/Users/ginny/Documents/soft_en/TestAutomationLab/valid_login_with_out_fname_lname.robot">
+<robot generator="Robot 7.4.1 (Python 3.13.2 on darwin)" generated="2026-01-01T13:47:06.084257" rpa="false" schemaversion="5">
+<suite id="s1" name="Valid Login With Out Email" source="/Users/ginny/Documents/soft_en/TestAutomationLab/valid_login_with_out_email.robot">
 <test id="s1-t1" name="Valid Register" line="6">
 <kw name="Open Browser To Register Page" owner="resource">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-01-01T13:42:45.052882" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/lab4/Registration.html'.</msg>
+<msg time="2026-01-01T13:47:06.238420" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/lab4/Registration.html'.</msg>
 <arg>${REGISTER URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-01-01T13:42:45.052677" elapsed="2.031031"/>
+<status status="PASS" start="2026-01-01T13:47:06.238203" elapsed="1.171740"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-01-01T13:42:47.084537" elapsed="0.312859"/>
+<status status="PASS" start="2026-01-01T13:47:07.410665" elapsed="0.019551"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2026-01-01T13:42:47.430455" level="INFO">Page title is 'Registration'.</msg>
+<msg time="2026-01-01T13:47:07.444377" level="INFO">Page title is 'Registration'.</msg>
 <arg>Registration</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2026-01-01T13:42:47.398629" elapsed="0.031908"/>
+<status status="PASS" start="2026-01-01T13:47:07.440753" elapsed="0.003710"/>
 </kw>
 <arg>5s</arg>
 <arg>1s</arg>
 <arg>Title Should Be</arg>
 <arg>Registration</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-01-01T13:42:47.397745" elapsed="0.032857"/>
+<status status="PASS" start="2026-01-01T13:47:07.430478" elapsed="0.014048"/>
 </kw>
-<status status="PASS" start="2026-01-01T13:42:45.052092" elapsed="2.378599"/>
+<status status="PASS" start="2026-01-01T13:47:06.237559" elapsed="1.207050"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=firstname</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-01-01T13:42:47.430894" elapsed="0.025058"/>
+<status status="PASS" start="2026-01-01T13:47:07.444811" elapsed="0.020576"/>
+</kw>
+<kw name="Input Firstname" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-01T13:47:07.466220" level="INFO">Typing text 'Somsri' into text field 'id=firstname'.</msg>
+<arg>id=firstname</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-01T13:47:07.466038" elapsed="0.143176"/>
+</kw>
+<arg>Somsri</arg>
+<status status="PASS" start="2026-01-01T13:47:07.465743" elapsed="0.143577"/>
+</kw>
+<kw name="Input Lastname" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-01T13:47:07.609911" level="INFO">Typing text 'Sodsai' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-01T13:47:07.609751" elapsed="0.055305"/>
+</kw>
+<arg>Sodsai</arg>
+<status status="PASS" start="2026-01-01T13:47:07.609528" elapsed="0.055624"/>
 </kw>
 <kw name="Input Organization" owner="resource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-01-01T13:42:47.456750" level="INFO">Typing text 'CS KKU' into text field 'id=organization'.</msg>
+<msg time="2026-01-01T13:47:07.665713" level="INFO">Typing text 'CS KKU' into text field 'id=organization'.</msg>
 <arg>id=organization</arg>
 <arg>${organization}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-01T13:42:47.456565" elapsed="0.166565"/>
+<status status="PASS" start="2026-01-01T13:47:07.665558" elapsed="0.048517"/>
 </kw>
 <arg>CS KKU</arg>
-<status status="PASS" start="2026-01-01T13:42:47.456276" elapsed="0.166958"/>
-</kw>
-<kw name="Input Email" owner="resource">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-01-01T13:42:47.623817" level="INFO">Typing text 'somsri@kkumail.com' into text field 'id=email'.</msg>
-<arg>id=email</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-01T13:42:47.623657" elapsed="0.059960"/>
-</kw>
-<arg>somsri@kkumail.com</arg>
-<status status="PASS" start="2026-01-01T13:42:47.623436" elapsed="0.060281"/>
+<status status="PASS" start="2026-01-01T13:47:07.665343" elapsed="0.048827"/>
 </kw>
 <kw name="Input Phone" owner="resource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-01-01T13:42:47.684274" level="INFO">Typing text '081-001-1234' into text field 'id=phone'.</msg>
+<msg time="2026-01-01T13:47:07.714777" level="INFO">Typing text '081-001-1234' into text field 'id=phone'.</msg>
 <arg>id=phone</arg>
 <arg>${phone}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-01T13:42:47.684119" elapsed="0.048322"/>
+<status status="PASS" start="2026-01-01T13:47:07.714608" elapsed="0.048752"/>
 </kw>
 <arg>081-001-1234</arg>
-<status status="PASS" start="2026-01-01T13:42:47.683897" elapsed="0.048636"/>
+<status status="PASS" start="2026-01-01T13:47:07.714353" elapsed="0.049100"/>
 </kw>
 <kw name="Submit Register" owner="resource">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-01-01T13:42:47.733099" level="INFO">Clicking button 'id=registerButton'.</msg>
+<msg time="2026-01-01T13:47:07.764031" level="INFO">Clicking button 'id=registerButton'.</msg>
 <arg>id=registerButton</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-01-01T13:42:47.732947" elapsed="0.074077"/>
+<status status="PASS" start="2026-01-01T13:47:07.763871" elapsed="0.056894"/>
 </kw>
-<status status="PASS" start="2026-01-01T13:42:47.732725" elapsed="0.074391"/>
+<status status="PASS" start="2026-01-01T13:47:07.763633" elapsed="0.057223"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2026-01-01T13:42:47.933847" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-01-01T13:42:47.934033" level="FAIL">Title should have been 'Success' but was 'Registration'.</msg>
+<msg time="2026-01-01T13:47:07.955649" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-01T13:47:07.955824" level="FAIL">Title should have been 'Success' but was 'Registration'.</msg>
 <arg>Success</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="FAIL" start="2026-01-01T13:42:47.807629" elapsed="0.129093">Title should have been 'Success' but was 'Registration'.</status>
+<status status="FAIL" start="2026-01-01T13:47:07.821415" elapsed="0.137209">Title should have been 'Success' but was 'Registration'.</status>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2026-01-01T13:42:49.048486" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-01-01T13:42:49.048606" level="FAIL">Title should have been 'Success' but was 'Registration'.</msg>
+<msg time="2026-01-01T13:47:09.076652" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-01T13:47:09.076767" level="FAIL">Title should have been 'Success' but was 'Registration'.</msg>
 <arg>Success</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="FAIL" start="2026-01-01T13:42:48.937467" elapsed="0.111605">Title should have been 'Success' but was 'Registration'.</status>
+<status status="FAIL" start="2026-01-01T13:47:08.960006" elapsed="0.117298">Title should have been 'Success' but was 'Registration'.</status>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2026-01-01T13:42:50.169853" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-01-01T13:42:50.169976" level="FAIL">Title should have been 'Success' but was 'Registration'.</msg>
+<msg time="2026-01-01T13:47:10.192039" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-01T13:47:10.192170" level="FAIL">Title should have been 'Success' but was 'Registration'.</msg>
 <arg>Success</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="FAIL" start="2026-01-01T13:42:50.052099" elapsed="0.118318">Title should have been 'Success' but was 'Registration'.</status>
+<status status="FAIL" start="2026-01-01T13:47:10.077833" elapsed="0.114814">Title should have been 'Success' but was 'Registration'.</status>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2026-01-01T13:42:51.313582" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-01-01T13:42:51.313704" level="FAIL">Title should have been 'Success' but was 'Registration'.</msg>
+<msg time="2026-01-01T13:47:11.311772" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-01T13:47:11.311896" level="FAIL">Title should have been 'Success' but was 'Registration'.</msg>
 <arg>Success</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="FAIL" start="2026-01-01T13:42:51.173184" elapsed="0.141022">Title should have been 'Success' but was 'Registration'.</status>
+<status status="FAIL" start="2026-01-01T13:47:11.195344" elapsed="0.116998">Title should have been 'Success' but was 'Registration'.</status>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2026-01-01T13:42:52.449552" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-01-01T13:42:52.449679" level="FAIL">Title should have been 'Success' but was 'Registration'.</msg>
+<msg time="2026-01-01T13:47:12.428058" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-01T13:47:12.428178" level="FAIL">Title should have been 'Success' but was 'Registration'.</msg>
 <arg>Success</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="FAIL" start="2026-01-01T13:42:52.316245" elapsed="0.133882">Title should have been 'Success' but was 'Registration'.</status>
+<status status="FAIL" start="2026-01-01T13:47:12.313814" elapsed="0.114816">Title should have been 'Success' but was 'Registration'.</status>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2026-01-01T13:42:53.563929" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-01-01T13:42:53.564049" level="FAIL">Title should have been 'Success' but was 'Registration'.</msg>
+<msg time="2026-01-01T13:47:13.542866" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-01T13:47:13.542986" level="FAIL">Title should have been 'Success' but was 'Registration'.</msg>
 <arg>Success</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="FAIL" start="2026-01-01T13:42:53.451624" elapsed="0.112874">Title should have been 'Success' but was 'Registration'.</status>
+<status status="FAIL" start="2026-01-01T13:47:13.431820" elapsed="0.111609">Title should have been 'Success' but was 'Registration'.</status>
 </kw>
-<msg time="2026-01-01T13:42:53.564600" level="FAIL">Keyword 'Title Should Be' failed after retrying for 5 seconds. The last error was: Title should have been 'Success' but was 'Registration'.</msg>
+<msg time="2026-01-01T13:47:13.543593" level="FAIL">Keyword 'Title Should Be' failed after retrying for 5 seconds. The last error was: Title should have been 'Success' but was 'Registration'.</msg>
 <arg>5s</arg>
 <arg>1s</arg>
 <arg>Title Should Be</arg>
 <arg>Success</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2026-01-01T13:42:47.807269" elapsed="5.757690">Keyword 'Title Should Be' failed after retrying for 5 seconds. The last error was: Title should have been 'Success' but was 'Registration'.</status>
+<status status="FAIL" start="2026-01-01T13:47:07.821029" elapsed="5.722961">Keyword 'Title Should Be' failed after retrying for 5 seconds. The last error was: Title should have been 'Success' but was 'Registration'.</status>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
 <arg>xpath=//h1</arg>
 <arg>Thank you for registering with us.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="NOT RUN" start="2026-01-01T13:42:53.565181" elapsed="0.000030"/>
+<status status="NOT RUN" start="2026-01-01T13:47:13.544156" elapsed="0.000027"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
 <arg>xpath=//h2</arg>
 <arg>We will send a confirmation to your email soon.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="NOT RUN" start="2026-01-01T13:42:53.565310" elapsed="0.000021"/>
+<status status="NOT RUN" start="2026-01-01T13:47:13.544294" elapsed="0.000025"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="NOT RUN" start="2026-01-01T13:42:53.565448" elapsed="0.000017"/>
+<status status="NOT RUN" start="2026-01-01T13:47:13.544402" elapsed="0.000016"/>
 </kw>
 <kw name="Close Browser" owner="resource" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2026-01-01T13:42:53.565904" elapsed="0.081293"/>
+<status status="PASS" start="2026-01-01T13:47:13.544835" elapsed="0.080428"/>
 </kw>
-<status status="PASS" start="2026-01-01T13:42:53.565725" elapsed="0.081573"/>
+<status status="PASS" start="2026-01-01T13:47:13.544655" elapsed="0.080717"/>
 </kw>
-<status status="FAIL" start="2026-01-01T13:42:45.051588" elapsed="8.595795">Keyword 'Title Should Be' failed after retrying for 5 seconds. The last error was: Title should have been 'Success' but was 'Registration'.</status>
+<status status="FAIL" start="2026-01-01T13:47:06.237060" elapsed="7.388399">Keyword 'Title Should Be' failed after retrying for 5 seconds. The last error was: Title should have been 'Success' but was 'Registration'.</status>
 </test>
 <doc>Valid register test</doc>
-<status status="FAIL" start="2026-01-01T13:42:44.898668" elapsed="8.749149"/>
+<status status="FAIL" start="2026-01-01T13:47:06.085662" elapsed="7.540208"/>
 </suite>
 <statistics>
 <total>
@@ -164,7 +175,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Valid Login With Out Fname Lname" id="s1" pass="0" fail="1" skip="0">Valid Login With Out Fname Lname</stat>
+<stat name="Valid Login With Out Email" id="s1" pass="0" fail="1" skip="0">Valid Login With Out Email</stat>
 </suite>
 </statistics>
 <errors>
