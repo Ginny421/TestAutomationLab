@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.2 on darwin)" generated="2026-01-01T12:57:31.030909" rpa="false" schemaversion="5">
+<suite id="s1" name="Register Page" source="/Users/ginny/Documents/soft_en/TestAutomationLab/register_page.robot">
+<test id="s1-t1" name="Valid Login" line="6">
+<kw name="Open Browser To Register Page" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-01T12:57:31.182548" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/lab4/Registration.html'.</msg>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-01T12:57:31.182347" elapsed="1.204631"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-01T12:57:32.388501" elapsed="0.038308"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-01-01T12:57:32.427963" elapsed="0.005248"/>
+</kw>
+<kw name="Registration Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-01T12:57:32.441105" level="INFO">Page title is 'Registration'.</msg>
+<arg>Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-01T12:57:32.435376" elapsed="0.005832"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-01T12:57:32.569702" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-01T12:57:32.441368" elapsed="0.128451"/>
+</kw>
+<status status="PASS" start="2026-01-01T12:57:32.435050" elapsed="0.134873"/>
+</kw>
+<status status="PASS" start="2026-01-01T12:57:31.181760" elapsed="1.388214"/>
+</kw>
+<kw name="Close Browser" owner="resource" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-01-01T12:57:32.570607" elapsed="0.079645"/>
+</kw>
+<status status="PASS" start="2026-01-01T12:57:32.570322" elapsed="0.080037"/>
+</kw>
+<status status="PASS" start="2026-01-01T12:57:31.181277" elapsed="1.469164"/>
+</test>
+<doc>A test suite with a single test for valid login.</doc>
+<status status="PASS" start="2026-01-01T12:57:31.032498" elapsed="1.618353"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Register Page" id="s1" pass="1" fail="0" skip="0">Register Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
